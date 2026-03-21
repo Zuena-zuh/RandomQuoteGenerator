@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,25 +10,45 @@ body {
   margin: 0;
 }
 
+/* Glassmorphism container */
 .container {
-  background: white;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.2);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
-  width: 300px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 320px;
+  color: #333;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
 }
 
+/* Title */
+h1 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* Quote text */
+#quote {
+  font-size: 18px;
+  margin: 20px 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Button styling */
 button {
-  margin-top: 15px;
   padding: 10px 20px;
   border: none;
-  background: #ff69b4;
+  background: #ff6f91;
   color: white;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background: #ff1493;
+  background: #ff3f6c;
+  transform: scale(1.05);
 }
